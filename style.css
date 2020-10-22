@@ -14,24 +14,24 @@ body{
 }
 /* ##################### Utiliti classes ######################*/
 .container{
-  max-width: 1200px;
-  width: 90%;
-  margin: auto;
+ max-width: 1200px;
+ width: 90%;
+ margin: auto;
 }
 .btn{
-  display: inline-block;
-  padding: 1em 2.5em;
-  text-decoration: none;
-  border-radius: 50px;
-  cursor: pointer;
-  outline: none;
-  margin-top: 1em;
-  text-transform: uppercase;
-  font-weight:500;
+ display: inline-block;
+ padding: 1em 2.5em;
+ text-decoration: none;
+ border-radius: 50px;
+ cursor: pointer;
+ outline: none;
+ margin-top: 1em;
+ text-transform: uppercase;
+ font-weight:500;
 }
 .btn-primary{
-  color:white;
-  background: #16a083;
+ color:white;
+ background: #16a083;
 }
 /* ##################### navbar styling ###################### */
 .navbar input[type="checkbox"],
@@ -79,6 +79,7 @@ body{
 .showcase-area{
   height: 50vh;
   background: url('./img/header-image2.jpg');
+  width: 100%;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -89,6 +90,7 @@ body{
   align-items: center;
   justify-content: center;
   height: 100%;
+  /* width: 100%; */
   font-size: 1.6rem;
 }
 .main-title{
@@ -119,6 +121,7 @@ body{
 .about-img{
  flex:1 1 400px; 
  padding: 30px;
+ border: 2px solid red;
  transform: translateX(150%);
  animation: img-anim 1s ease-in-out forwards;
 }
@@ -126,6 +129,14 @@ body{
   100%{
     transform: translate(0);
   }
+}
+.about-img img {
+  display: block;
+  height: 335px;
+  max-width: 100%;
+  margin: auto;
+  object-fit: cover;
+  object-position: right;
 }
 .about-text{
   flex:1 1 400px;
@@ -138,12 +149,4 @@ body{
   100%{
     transform: translate(0);
   }
-}
-.about-img img{
-  display: block;
-  height: 335px;
-  max-width: 100%;
-  margin: auto;
-  object-fit: cover;
-  object-position: right;
 }
